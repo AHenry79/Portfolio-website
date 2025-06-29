@@ -28,7 +28,12 @@ onMounted(() => {
 
   document.addEventListener("mouseover", (e) => {
     const target = e.target.closest("a, button");
-    if (target) isHovered.value = true;
+    if (target) {
+      if (target.tagName === "BUTTON" && target.disabled) return;
+      if (target.tagName === "A" && target.classList.contains("disabled"))
+        return;
+      isHovered.value = true;
+    }
   });
 
   document.addEventListener("mouseout", (e) => {

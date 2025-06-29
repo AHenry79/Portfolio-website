@@ -2,7 +2,12 @@
   <section class="hero">
     <div ref="lottieContainer" class="lottie-bg"></div>
     <div class="hero-content">
-      <h1>Hello, I'm Austin</h1>
+      <h1 class="heading">
+        <span class="intro-wrapper">
+          <span class="intro-text">Hello, I'm</span>
+          <span class="typewriter">Austin</span>
+        </span>
+      </h1>
       <p>Application & Software Engineer</p>
     </div>
   </section>
